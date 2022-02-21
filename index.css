@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 4fr 1fr;
+    grid-template-areas: "header header"
+    "banner banner"
+    "buttons info";
+}
+
+#header{
+    grid-area: header;
+    background: url(recursos/images/stars.gif) center no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+#header a{
+    text-decoration: none;
+    font-family: 'IM Fell English', serif;
+    color: white;
+    background-color: #0E2232;
+    padding: 0.3rem;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+#header a:hover{
+    color: black;
+    background-color: white;
+}
+
+#banner{
+    grid-area: banner;
+    background: url(recursos/images/Hogwarts.jpg) center no-repeat;
+    background-size: cover;
+}
+
+#buttons{
+    grid-area: buttons;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0E2232;
+}
+
+#buttons a{
+    text-decoration: none;
+    width: 8rem;
+    color: white;
+}
+
+#buttons span{
+    font-size: 4rem;
+}
+
+#buttons span:hover{
+    color: black;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+#info{
+    grid-area: info;
+    text-align: center;
+    padding: 2rem;
+    background-color: #0E2232;
+    color: white;
+}
+
+#info h1{
+    font-family: 'Spectral SC', serif;
+}
+
+#info h3{
+    font-family: 'IM Fell DW Pica', serif;
+}
